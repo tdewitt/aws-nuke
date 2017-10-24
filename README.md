@@ -1,8 +1,8 @@
 # aws-nuke
 
-[![Build Status](https://travis-ci.org/rebuy-de/aws-nuke.svg?branch=master)](https://travis-ci.org/rebuy-de/aws-nuke)
-[![license](https://img.shields.io/github/license/rebuy-de/aws-nuke.svg)]()
-[![GitHub release](https://img.shields.io/github/release/rebuy-de/aws-nuke.svg)]()
+[![Build Status](https://travis-ci.org/tdewitt/aws-nuke.svg?branch=master)](https://travis-ci.org/tdewitt/aws-nuke)
+[![license](https://img.shields.io/github/license/tdewitt/aws-nuke.svg)]()
+[![GitHub release](https://img.shields.io/github/release/tdewitt/aws-nuke.svg)]()
 
 Nuke a whole AWS account and delete all its resources.
 
@@ -164,7 +164,6 @@ eu-west-1 - EC2Subnet - 'subnet-154d844e' - DependencyViolation: The subnet 'sub
 eu-west-1 - EC2Volume - 'vol-0ddfb15461a00c3e2' - VolumeInUse: Volume vol-0ddfb15461a00c3e2 is currently attached to i-01b489457a60298dd
 	status code: 400, request id: f88ff792-a17f-4fdd-9219-78a937a8d058
 eu-west-1 - EC2Vpc - 'vpc-c6159fa1' - DependencyViolation: The vpc 'vpc-c6159fa1' has dependencies and cannot be deleted.
-eu-west-1 - S3Object - 's3://rebuy-terraform-state-138758637120/run-terraform.lock' - triggered remove
 
 Removal requested: 2 waiting, 6 failed, 5 skipped, 0 finished
 
@@ -202,13 +201,13 @@ or until there are only resources with errors left.
 ### Use Released Binaries
 
 The easiest way of installing it, is to download the latest
-[release](https://github.com/rebuy-de/aws-nuke/releases) from GitHub.
+[release](https://github.com/tdewitt/aws-nuke/releases) from GitHub.
 
 ### Compile from Source
 
 To compile *aws-nuke* from source you need a working
 [Golang](https://golang.org/doc/install) development environment. The sources
-must be cloned to `$GOPATH/src/github.com/rebuy-de/aws-nuke`.
+must be cloned to `$GOPATH/src/github.com/tdewitt/aws-nuke`.
 
 Also you need to install [Glide](https://glide.sh/),
 [golint](https://github.com/golang/lint/) and [GNU

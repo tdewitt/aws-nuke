@@ -17,7 +17,6 @@ import (
 	"github.com/aws/aws-sdk-go/service/lambda"
 	"github.com/aws/aws-sdk-go/service/rds"
 	"github.com/aws/aws-sdk-go/service/route53"
-	"github.com/aws/aws-sdk-go/service/s3"
 	"github.com/aws/aws-sdk-go/service/sns"
 )
 
@@ -38,7 +37,6 @@ func GetListers(sess *session.Session) []ResourceLister {
 		lambda           = LambdaNuke{lambda.New(sess)}
 		rds              = RDSNuke{rds.New(sess)}
 		route53          = Route53Nuke{route53.New(sess)}
-		s3               = S3Nuke{s3.New(sess)}
 		sns              = SNSNuke{sns.New(sess)}
 	)
 
@@ -98,8 +96,6 @@ func GetListers(sess *session.Session) []ResourceLister {
 		rds.ListSubnetGroups,
 		route53.ListHostedZones,
 		route53.ListResourceRecords,
-		s3.ListBuckets,
-		s3.ListObjects,
 		sns.ListSubscriptions,
 		sns.ListTopics,
 	}

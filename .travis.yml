@@ -12,10 +12,10 @@ script:
   --name aws-nuke
   --entrypoint "sh"
   -e CGO_ENABLED=0
-  --workdir "/go/src/github.com/rebuy-de/aws-nuke"
+  --workdir "/go/src/github.com/tdewitt/aws-nuke"
   aws-nuke
   -euxc "make xc && mkdir releases && mv aws-nuke-* releases"
-- docker cp -L aws-nuke:/go/src/github.com/rebuy-de/aws-nuke/releases ./releases
+- docker cp -L aws-nuke:/go/src/github.com/tdewitt/aws-nuke/releases ./releases
 - ls -l *
 
 deploy:
@@ -25,6 +25,6 @@ deploy:
   file: releases/*
   skip_cleanup: true
   on:
-    repo: rebuy-de/aws-nuke
+    repo: tdewitt/aws-nuke
     tags: true
 

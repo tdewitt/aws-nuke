@@ -1,4 +1,4 @@
-# Source: https://github.com/rebuy-de/golang-template
+# Source: https://github.com/tdewitt/golang-template
 # Version: 1.3.1
 
 FROM golang:1.8-alpine
@@ -21,8 +21,8 @@ WORKDIR /go/src/github.com/Masterminds/glide
 RUN git checkout v0.12.3
 RUN go install
 
-COPY . /go/src/github.com/rebuy-de/aws-nuke
-WORKDIR /go/src/github.com/rebuy-de/aws-nuke
+COPY . /go/src/github.com/tdewitt/aws-nuke
+WORKDIR /go/src/github.com/tdewitt/aws-nuke
 RUN CGO_ENABLED=0 make install
 
 ENTRYPOINT ["/go/bin/aws-nuke"]

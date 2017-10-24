@@ -16,7 +16,6 @@ import (
 	"github.com/aws/aws-sdk-go/service/lambda"
 	"github.com/aws/aws-sdk-go/service/rds"
 	"github.com/aws/aws-sdk-go/service/route53"
-	"github.com/aws/aws-sdk-go/service/s3"
 	"github.com/aws/aws-sdk-go/service/sns"
 )
 
@@ -74,10 +73,6 @@ type RDSNuke struct {
 
 type Route53Nuke struct {
 	Service *route53.Route53
-}
-
-type S3Nuke struct {
-	Service *s3.S3
 }
 
 type SNSNuke struct {

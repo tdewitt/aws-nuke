@@ -1,6 +1,6 @@
 package cmd
 
-import "github.com/rebuy-de/aws-nuke/resources"
+import "github.com/tdewit/aws-nuke/resources"
 
 type ItemState int
 

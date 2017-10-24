@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"github.com/aws/aws-sdk-go/aws/session"
-	"github.com/rebuy-de/aws-nuke/resources"
+	"github.com/tdewitt/aws-nuke/resources"
 )
 
 type Scanner struct {

@@ -1,4 +1,4 @@
-# Source: https://github.com/rebuy-de/golang-template
+# Source: https://github.com/tdewitt/golang-template
 # Version: 1.3.1
 # Dependencies:
 # * Glide

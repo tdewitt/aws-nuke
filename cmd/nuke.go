@@ -10,7 +10,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/iam"
 	"github.com/aws/aws-sdk-go/service/sts"
-	"github.com/rebuy-de/aws-nuke/resources"
+	"github.com/tdewitt/aws-nuke/resources"
 )
 
 type Nuke struct {
